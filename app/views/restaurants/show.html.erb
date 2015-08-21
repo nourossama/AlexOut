@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @restaurant.Name %>
+</p>
+
+<p>
+  <strong>Decription:</strong>
+  <%= @restaurant.Decription %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @restaurant.Location %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @restaurant.Tag %>
+</p>
+
+<%# your_ruby_code %><%# link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+<%= link_to 'Back', restaurants_path %>
