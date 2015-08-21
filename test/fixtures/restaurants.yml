@@ -2,10 +2,12 @@
 
 one:
   name: MyString
-  location: MyString
+  description: MyText
   tag: MyString
+  rating: MyString
 
 two:
   name: MyString
-  location: MyString
+  description: MyText
   tag: MyString
+  rating: MyString
