@@ -14,3 +14,4 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'devise', '~> 3.5.2'
 gem 'paperclip', '~> 4.3.0'
+gem 'bootstrap-sass', '~> 3.3.5.1'
