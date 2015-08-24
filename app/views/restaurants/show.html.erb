@@ -1,24 +1,59 @@
-<%= image_tag @restaurant.image.url(:medium)%>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-md-4">
+				<%=image_tag @restaurant.image.url(:medium) %>
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+							</br>
+							<tr>
+                              <td> <strong>Name:</strong></td>
+                              <td><%= @restaurant.name %></td>
+							</tr>
+						    </br>
+							<tr>
+                               <td><strong>Description:</strong></td>
+                               <td><%= @restaurant.description %></td>
+							</tr>
+							</br>
+							<tr>
+							  <td><strong>Tag:</strong></td>
+                              <td><%= @restaurant.tag %></td>
+                            </tr>
+                            </br>
+                            <tr>
+							  <td><strong>Rating:</strong></td>
+                              <td><%= @restaurant.rating %></td>
+                            </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @restaurant.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @restaurant.description %>
-</p>
+		</div>
 
-<p>
-  <strong>Tag:</strong>
-  <%= @restaurant.tag %>
-</p>
+	</div>
+	<div id="down">
+        <% if user_signed_in? %>
+            <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+        <%end%>
+        <%= link_to 'Back', restaurants_path %>
+	</div>
 
-<p>
-  <strong>Rating:</strong>
-  <%= @restaurant.rating %>
-</p>
+</div>
 
-<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
-<%= link_to 'Back', restaurants_path %>
+<style>
+.panel{
+	/*background: #f6daed;*/
+	background: #f9ceea;
+}
+
+.down{
+	padding-left: 500px;
+}
+.table{
+	color:#337ab7;
+}
+</style>
