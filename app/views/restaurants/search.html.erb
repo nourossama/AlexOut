@@ -1,0 +1,26 @@
+<div class="row-fluid" style="position:relative; z-index:1;">
+  <% @restaurants.each do |restaurant| %>
+    <div class="col-sm-6 col-md-3">
+      <ul class="thumbnail" >
+      <li class="span4">
+        <h2><%= link_to restaurant.name, restaurant %> 
+        <%= link_to (image_tag restaurant.image.url(:medium), class: 'image'), restaurant %>
+      </li>
+      </ul>
+    </div>
+  <%end%>
+</div>
+<style>
+.thumbnail{
+  background-color:#f6b2df;
+  text-align: center;
+  border: none;
+  width:250px; 
+  height:200px;
+}
+.thumbnail a{
+    font-family: 'Dancing Script';
+  font-size: 90%;
+}
+
+</style>
