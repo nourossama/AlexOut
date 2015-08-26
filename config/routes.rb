@@ -1,22 +1,15 @@
 Rails.application.routes.draw do
-  
+  resources :reviews
 
   devise_for :users
   devise_for :views
-<<<<<<< HEAD
-
-  resources :restaurants do
-    resources :reviews, except: [:show, :index]
-  end
   
-=======
   resources :restaurants do
     collection do
       get 'search'
     end
-    resources :reviews
+    resources :reviews, except: [:show, :index]
   end   
->>>>>>> 1675a9aaf6bba29096da7d2b92c5c08112674e46
   root'restaurants#index'
   #get 'users/sign_out' => 'devise/sessions#destroy'
   # The priority is based upon order of creation: first created -> highest priority.
