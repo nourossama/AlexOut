@@ -3,22 +3,15 @@
 		<div class="row">
 			<div class="col-md-4">
 				<%=image_tag @restaurant.image.url(:medium) %>
+				<hr>
+				<div class="star-rating" data-score= <%= @avgreview %>></div>
+				  <em><b><%= "#{@reviews.length} reviews" %></b></em>
 				<div class="table-responsive">
 					<table class="table">
 						<tbody>
 							</br>
 							<tr>
-                              <td> <strong>Name:</strong></td>
-                              <td><%= @restaurant.name %></td>
-							</tr>
-						    </br>
-							<tr>
-                               <td><strong>Description:</strong></td>
-                               <td><%= @restaurant.description %></td>
-							</tr>
-							</br>
-							<tr>
-							  <td><strong>Tag:</strong></td>
+							  <td><strong>Tags:</strong></td>
                               <td><%= @restaurant.tag %></td>
                             </tr>
                             </br>
@@ -32,7 +25,7 @@
 				</div>
 			</div>
          
-         <div class=".col-md-7.col-md-offset-1">
+         <div class="col-md-7 col-md-offset-1">
          	<h1 class="review_title"><%= @restaurant.name%> </h1>
          	<p><%= @restaurant.description%></p>
            <% if @reviews.blank?%>
@@ -41,7 +34,8 @@
           <% else %>
           <% @reviews.each do |review|%>
           <div class="reviews">
-          	<div class="star-rating" data-score= <%= review.rating %> ></div>
+          	<div class="star-rating" data-score= <%= review.rating %> > </div>
+          </br>
             <p><%= review.comment %></p>
           </div>
          <%end%>
@@ -65,6 +59,7 @@
 	background: #f9ceea;
 }
 
+
 .down{
 	padding-left: 500px;
 }
@@ -80,4 +75,4 @@ $('.star-rating').raty({
 		return $(this).attr('data-score');
 	}
 });
-<script>
+</script>
