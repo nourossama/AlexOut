@@ -10,11 +10,13 @@
     <div id="layer1">
     	<%= render 'layouts/header'%>
     </div>
-	<div class="container" style="margin-top: 180px;" id="layer2">
+
+	<div class="container" style="margin-top: 700px;" id="layer2">
 	<%flash.each do |name, msg|%>
 	<% content_tag(:div, msg, class:"alert, alert-info")%>
 	<%end%>
 
+    <%= render 'layouts/slideshow'%>
 <%= yield %>
 </div>
 </body>

@@ -16,3 +16,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'devise', '~> 3.5.2'
 gem 'paperclip', '~> 4.3.0'
 gem 'searchkick', '~> 0.9.0'
+gem 'flexslider', '~> 2.2.0'

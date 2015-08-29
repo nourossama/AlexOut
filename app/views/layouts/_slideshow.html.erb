@@ -1,0 +1,67 @@
+<div class="panel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" class="panel-body" >
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<%=image_tag 'ayday3a.jpg'%>
+</div>
+
+<div class="item">
+<%=link_to image_tag("leila.jpg", :alt => "leila"), root_url , class:"active" %>
+</div>
+<div class="item">
+<%=image_tag 'mince.jpeg'%>
+</div>
+<div class="item">
+<%=image_tag 'mori sushi.jpg'%>
+</div>
+<div class="item">
+<%=image_tag 'nutellopia.jpg'%>
+</div>
+<div class="item">
+<%=image_tag 'ole.jpg'%>
+</div>
+
+
+</div>
+
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div>
+
+</div><!--//container -->
+<style>
+
+.panel{
+    width:600px;
+    height:450px;
+    position:absolute;
+    left:50%; 
+    top:50%; 
+    margin-left:-250px; 
+    margin-top:-200px;
+}
+.carousel-indicators{
+  bottom:-50px;
+  background-size: 11px;
+  border-radius: none;
+  position: absolute;
+}
+.carousel-indicators li { 
+	visibility: hidden; 
+}
+.carousel-inner {
+    margin-bottom:50px;
+}
+</style>

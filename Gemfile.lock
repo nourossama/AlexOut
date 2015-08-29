@@ -66,6 +66,8 @@ GEM
     execjs (2.6.0)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
+    flexslider (2.2.0)
+      sass-rails (>= 3.1.0)
     hashie (3.4.2)
     hike (1.2.3)
     i18n (0.7.0)
@@ -159,6 +161,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.5.1)
   coffee-rails (~> 4.0.0)
   devise (~> 3.5.2)
+  flexslider (~> 2.2.0)
   jbuilder (~> 2.0)
   jquery-rails
   paperclip (~> 4.3.0)
