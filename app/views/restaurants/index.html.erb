@@ -10,9 +10,11 @@
 </div>
 
 </br>
-<div class="row-fluid" style="position:relative; z-index:1;">
+
+
+<div class="row-fluid" style="position:relative; z-index:1;" >
   <% @restaurants.each do |restaurant| %>
-    <div class="col-sm-6 col-md-3">
+    <div class="col-sm-6 col-md-3" style="background: #9ab2e1 ;">
       <ul class="thumbnail" >
       <li class="span4">
         <h2><%= link_to restaurant.name, restaurant %> 
@@ -22,6 +24,9 @@
     </div>
   <%end%>
 </div>
+
+
+
 <style>
 .jumbotron{
   background: #f6daed;
@@ -32,8 +37,11 @@
 .jumbotron a{
   font-family: 'Comic Sans MS';
 }
+.panel{
+  background: #83bacf;
+}
 .thumbnail{
-  background-color:#f6b2df;
+  background: transparent;
   text-align: center;
   border: none;
   width:250px; 
