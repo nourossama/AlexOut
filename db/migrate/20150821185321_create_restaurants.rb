@@ -9,4 +9,7 @@ class CreateRestaurants < ActiveRecord::Migration
       t.timestamps
     end
   end
+   
+  Restaurant.create(name: Nutellopia) 
+  
 end
