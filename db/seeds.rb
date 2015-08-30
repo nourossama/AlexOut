@@ -5,4 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Restaurant.create([{name: 'Nutellopia'}, {image : '<%= image_tag 'nutellopia.jpg'%>}''])
+restaurant = Restaurant.create([{name: 'Nutellopia'}, {image: '<%= image_tag ("nutellopia.jpg" , :alt => "header")%>}''])
